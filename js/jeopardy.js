@@ -9,6 +9,8 @@ $(function () {
         openingTheme.play();
         // openingTheme.play();
     }
+
+    //find a way to load up the game when game load button is pressed. (due next class)
     $('#game-load-input-button').click(function () {
         var file = $('#input-file').prop('files')[0];
         if ($('#input-file').val() !== '') {
@@ -41,6 +43,9 @@ $(function () {
 
         }
     });
+
+
+
     $('#kill-music-button').click(function () {
         openingTheme.pause();
         openingTheme.currentTime = 0;
